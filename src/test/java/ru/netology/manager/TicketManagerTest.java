@@ -29,7 +29,6 @@ class TicketManagerTest {
     void shouldFindDME_LEDTickets() {
         Ticket[] actual = manager.findAll("DME", "LED");
         Ticket[] expected = new Ticket[]{ticket2, ticket3, ticket1};
-        Arrays.sort(actual);
         assertArrayEquals(actual, expected);
     }
 
